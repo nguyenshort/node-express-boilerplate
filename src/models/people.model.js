@@ -22,13 +22,7 @@ const schema = new mongoose.Schema({
   address: {
     type: String,
     trim: true,
-  },
-  company: {
-    type: mongoose.Types.ObjectId,
-    ref: 'Company',
-    required: true,
-    index: true,
-  },
+  }
 });
 
 module.exports = mongoose.model('People', schema);
