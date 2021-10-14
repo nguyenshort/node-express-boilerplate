@@ -8,11 +8,13 @@ const schema = new mongoose.Schema({
   },
   people: {
     type: mongoose.Types.ObjectId,
+    ref: 'People',
     required: true,
     index: true,
   },
   company: {
     type: mongoose.Types.ObjectId,
+    ref: 'Company',
     required: true,
     index: true,
   },
