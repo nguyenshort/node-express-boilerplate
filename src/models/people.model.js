@@ -25,6 +25,7 @@ const schema = new mongoose.Schema({
   },
   company: {
     type: mongoose.Types.ObjectId,
+    ref: 'Company',
     required: true,
     index: true,
   },
